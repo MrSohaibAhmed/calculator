@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.set{
+    float:left;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    color:white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+
+.color{
+    background-color: coral;
+    border: 2px solid black;
+    
+}
+.style{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 5px ;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    /* width: 400px; */
+}
+
+.off{
+  background-color: black;
+}
+
+button:hover{
+  background-color:navy;
+  color: white;
+}
+
+</style>
+<body style="background-color: darkslategray;">
+    <div class="style" >
+        <!-- <p style="height: 100px; width: 255px; background-color: white;"> -->
+          <input id="inp" style="height: 100px; width: 255px; background-color: white;font-size: 30px;border: 4px solid black;" type="text" value="">
+        
+       
+  <div >
+    <button id="reset" class="color">C</button>  
+    <button  class="color">MR</button>
+    <button  id="off" class="color">OFF</button>
+    <button  class="color">ON</button>
+
+  </div>
+  <div >
+    <button id="button" value="1">1</button>  
+    <button id="button" value="2">2</button>
+    <button id="button" value="3">3</button>
+    <button id="button" class="color" value="+">+</button>
+
+  </div>
+  <div >
+    <button id="button" value="4">4</button>  
+    <button id="button" value="5">5</button>
+    <button id="button" value="6">6</button>
+    <button id="button" class="color">*</button>
+
+  </div>
+  <div >
+    <button id="button" value="7">7</button>  
+    <button id="button" value="8">8</button>
+    <button id="button" value="9">9</button>
+    <button id="button" class="color">-</button>
+
+  </div> 
+  <div >
+    <button id="button" value="0">0</button>  
+    <button id="button">/</button>
+    <button id="button">.</button>
+    <button class="equals" style=" background-color: coral; border: 2px solid black;">=</button>
+
+  </div>  
+  </div> 
+  
+<script src="./calculator.js" ></script>
+</body>
+
+
+</html>
